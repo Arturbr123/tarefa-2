@@ -1,0 +1,15 @@
+function verificarDivisibilidade(numero) {
+    if (numero % 3 === 0 && numero % 7 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Testando a função
+let numero = parseInt(prompt("Digite um número: "));
+if (verificarDivisibilidade(numero)) {
+    console.log(numero + " é divisível por 3 e 7.");
+} else {
+    console.log(numero + " não é divisível por 3 e 7.");
+}
